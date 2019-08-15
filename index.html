@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>HCI Activity 2</title>
+</head>
+<body onload="readTask()">
+    <nav class="navbar navbar-light bg-warning mb-4">
+        <span class="navbar-brand mb-0 h1">HCI Activity 2</span>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" id="firstSection">
+                <form class="border p-4 mb-4 " id="form">
+                   
+                    <div class="form-group">
+                        <label>Firstname</label>
+                        <input type="text" class="form-control" id="task" placeholder="Enter first name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Lastname</label>
+                        <input type="text" class="form-control" id="description" placeholder="Enter last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Program</label>
+                        <input type="text" class="form-control" id="cnumber" placeholder="Enter Program">
+                    </div>
+
+                    <div class="form-group">
+                            <label>Select Gender</label>
+                        <select id="btype">
+                            <option value="Male" selected="selected">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="LGBTQ">LGBTQ</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" id="button1" class="btn btn-primary"><i class="fas fa-plus"></i>Add Task</button>
+                    <button style="display: none" id="button2" class="btn btn-success">Update Task</button>
+                    <button style="display: none" id="button3" class="btn btn-danger">Cancel</button> 
+                </form>
+            </div>
+            <div class="col-md-6" id="cardSection">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/solid.js" integrity="sha384-YmNA3b9AQuWW8KZguYfqJa/YhKNTwGVD5pQc1cN0ZAVRudFFtR17HR7rooNcVXe4" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js" integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
